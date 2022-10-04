@@ -40,11 +40,14 @@
 			      <li class="has-dropdown">
 			        <a href="#" title="Sobre">Sobre</a>
 			        <ul class="dropdown">
-			          <li><a href="#">Quem somos</a></li>
-			          <li><a href="#">O cartório</a></li>
-			          <li><a href="#">LGPD</a></li>
-			          <li><a href="#">Transparência</a></li>
-			          <li><a href="#">Política de Privacidade</a></li>
+	        			<li class="title back js-generated">
+        					<h5><a href="javascript:void(0)"><i class="fa-solid fa-chevrons-left"></i> VOLTAR</a></h5>
+	        			</li>	
+						<li><a href="#">Quem somos</a></li>
+						<li><a href="#">O cartório</a></li>
+						<li><a href="#">LGPD</a></li>
+						<li><a href="#">Transparência</a></li>
+						<li><a href="#">Política de Privacidade</a></li>
 			        </ul>
 			      </li>
 			      <li><a href="#" title="Serviços">Serviços</a></li>

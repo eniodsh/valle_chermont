@@ -44,6 +44,10 @@
         </a>
       </li>
     </ul>
+
+    <br clear="all" />
+
+    <a href="#" class="btn_veja">Ver mais</a>
   </div>
   <br clear="all" />
 </section>
@@ -150,7 +154,7 @@
     <br clear="all" />
 
     <a href="#" class="btn_veja">Ver mais</a>
-    
+
   </div>
   <br clear="all" />
 </section>

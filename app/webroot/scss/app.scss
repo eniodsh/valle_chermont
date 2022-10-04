@@ -122,7 +122,6 @@ header{
 
   @media #{$small-only} {
    
-
   }
   
   .faixa_top_header{
@@ -138,6 +137,11 @@ header{
       margin: 7px 15px 7px 0;
 
       &:hover{color: $secondary-color;}
+
+      @media only screen and (max-width: 600px) {
+        float: left;
+        font-size: 15px;
+      }
     }
 
     .box_redes{
@@ -146,6 +150,9 @@ header{
       li{
         float: left;
         margin: 0 5px;
+        @media only screen and (max-width: 600px) {
+          margin: 0 3px;
+        }
 
         a{
           width: 40px;
@@ -158,6 +165,14 @@ header{
           border-radius: 100%;
 
           &:hover{color: $secondary-color;}
+
+          @media only screen and (max-width: 600px) {
+            width: 30px;
+            height: 30px;
+            font-size: 20px!important;
+            padding-top: 1px!important;
+            i{font-size: 20px!important;}
+          }
         }
       }
     }
@@ -168,6 +183,10 @@ header{
     width: 100%;
     padding: 10px 0;
 
+    @media #{$small-only}{ 
+      padding: 0;
+    }
+
     h1{
       float: left;
       margin: 0;
@@ -175,7 +194,7 @@ header{
       img{max-width: 110px;}
 
       @media #{$small-only}{ 
-        /*img{max-width: 150px;}*/
+        img{max-width: 70px;margin-top: -10px;}
       }
     }
     
@@ -219,7 +238,18 @@ header{
     float: right;
     margin-top: 40px;
     background: none!important;
-    
+
+    .top-bar-section ul{margin-top: 58px;}
+
+    @media #{$small-only} {
+      margin-top: 0;
+      width: 100%;
+      position: absolute;
+      right: 0;
+
+      .top-bar-section ul .dropdown{margin-top: 0;}
+    }
+
     .top-bar-section li,
     .top-bar-section li:not(.has-form) a:not(.button){background: none;}
 
@@ -237,6 +267,7 @@ header{
         @media only screen and (max-width: 1120px) {
           font-size: 17px;
         }
+
       } 
       &:first-child{
         a{border: none;}
@@ -250,6 +281,10 @@ header{
 
     .top-bar-section .dropdown li{
       margin: 0 0 1px;
+
+      @media #{$small-only} {
+        margin: 0;
+      }
       a{
         padding: 10px;
         font-size: 15px;
@@ -265,6 +300,52 @@ header{
     }
   } 
 }
+
+/********** MENU **********/
+
+.top-bar .toggle-topbar.menu-icon{margin-top: 20px!important;top: auto;right: 10px;}
+
+.top-bar .title-area{}
+.top-bar .toggle-topbar.menu-icon a span::after{box-shadow: 0 0 0 1px $primary-color, 0 7px 0 1px $primary-color, 0 14px 0 1px $primary-color;}
+
+.top-bar-section li:not(.has-form) a:not(.button){background: none;}
+.title-area{z-index: 9999;}
+
+.menu_fechar{
+  display: none!important;
+  z-index: 99999;
+  a{font-size: 20px!important;color: $white!important;}
+}
+.top-bar.expanded{
+  overflow: visible;
+
+  .menu_fechar{display:block!important;position: absolute;left: 230px;top: 10px;}
+
+}
+  .top-bar.expanded .title-area{background: none!important;}
+  .top-bar.expanded .toggle-topbar a span::after{
+    box-shadow: 0 0 0 1px $primary-color, 0 7px 0 1px $primary-color, 0 14px 0 1px $primary-color;
+  }
+.top-bar.expanded .top-bar-section{
+  top: 16px;
+  z-index: 99999;
+  li{
+    padding: 0!important;
+    background: $primary-color;
+    &:hover a{background:none;}
+  }
+  a{
+    color: $white;
+    padding: 6px 40px!important;
+    text-align: center;
+
+    @media #{$small-only} {
+      padding: 9px 40px!important;
+      border-bottom: 1px solid!important;
+    }
+  }
+}
+
 
 /****************** FOOTER *******************/
 
@@ -284,13 +365,28 @@ footer{
     min-height: 290px;
 
     img{max-width: 270px;margin-top: 20px;}
+
+    @media only screen and (max-width: 960px) {
+      img{max-width: 180px;margin-top: 20px;}
+    }
     
+    @media only screen and (max-width: 600px) {
+      @include grid-column(12);
+      min-height: auto;
+      padding: 10px 0 30px;
+    }
   }
   .rcol{
     @include grid-column(6);
     padding: 40px 0;
     min-height: 290px;
     text-align: left;
+
+    @media only screen and (max-width: 600px) {
+      @include grid-column(12);
+      min-height: auto;
+      padding: 0 0 40px;
+    }
 
     .box_centro{display: table;margin: 0 auto;}
     a{
@@ -339,6 +435,17 @@ footer{
         }
       }
     }
+
+    @media only screen and (max-width: 960px) {
+      a{
+        font-size: 16px;
+
+        i{width: 40px;height: 40px;font-size: 20px;}
+      }
+      .box_redes{
+        a i{margin-left: 3px;}
+      }
+    }
   }
 }
 
@@ -352,6 +459,11 @@ footer{
 
   h2{margin: 0 15px 20px;color: $primary-color;}
 
+  @media only screen and (max-width: 600px) {
+    
+    h2{width: 100%;text-align: center;}
+  }
+
   ul{
     li{
       a{
@@ -362,15 +474,33 @@ footer{
           overflow: hidden;
           img{position: absolute;width: 100%;}
 
-          @media #{$small-only} {
-            
+          @media only screen and (max-width: 1190px) {
+            height: 185px;
+          }
+          @media only screen and (max-width: 961px) {
+            height: 140px;
           }
         }
-        h4{font-size: 17px;height: 80px;margin-top: 10px;color: $black;}
+        h4{
+          font-size: 17px;
+          height: 80px;
+          margin-top: 10px;
+          color: $black;
+          @media only screen and (max-width: 961px) {
+            font-size: 15px;
+            height: 100px;
+          }
+        }
         &:hover{
           h4{color: $primary-color;}
         }
       }
+    }
+    @media only screen and (max-width: 961px) {
+      .col_4{@include grid-column(6);}
+    }
+    @media only screen and (max-width: 500px) {
+      .col_4{@include grid-column(12);}
     }
   }
 }
@@ -384,10 +514,20 @@ footer{
   h2{color:$primary-color;float: left;}
   img{float: right;max-width: 180px;}
 
+  @media only screen and (max-width: 600px) {
+    padding-bottom: 0;
+    text-align: center;
+    h2{width: 100%;text-align: center;}
+    img{float: none;}
+  }
   ul{
     float: left;
     width: 100%;
     margin: 20px 0;
+
+     @media only screen and (max-width: 600px) {
+      margin-bottom: 0;
+     }
     li{
       font-size: 16px;
       line-height: 22px;
@@ -431,6 +571,21 @@ footer{
         }
       }
     }
+    @media only screen and (max-width: 960px) {
+      .col_2{@include grid-column(4);min-height: 240px;}
+    }
+    @media only screen and (max-width: 600px) {
+      .col_2{
+        @include grid-column(6);
+        min-height: 210px;
+
+        i{
+          width: 90px;
+          height: 90px;
+          background-size: 55px !important;
+        }
+      }
+    }
   }
 }
 
@@ -439,6 +594,11 @@ footer{
   width: 100%;
   padding: 20px 0;
   h2{color:$primary-color;float: left;}
+
+  @media only screen and (max-width: 600px) {
+    text-align: center;
+    h2{width: 100%;text-align: center;}
+  }
 
   ul{
     float: left;
@@ -467,19 +627,38 @@ footer{
           }
         }
       }
+
+      @media only screen and (max-width: 960px) {
+        @include grid-column(4);
+      }
+      @media only screen and (max-width: 500px) {
+        @include grid-column(6);
+
+        a{
+          font-size: 14px;
+          line-height: 20px;
+          text-align: center;
+
+          i{
+            width: 80px;
+            height: 80px;
+          }
+        }
+
+      }
     }
   }
 
-  .btn_veja{
-    font-size: 25px;
-    font-weight: 700;
-    text-decoration: underline;
-    margin: 30px auto 0;
-    display: table;
+}
 
-    &:hover{color: $secondary-color;}
-  }
+.btn_veja{
+  font-size: 25px;
+  font-weight: 700;
+  text-decoration: underline;
+  margin: 30px auto 0;
+  display: table;
 
+  &:hover{color: $secondary-color;}
 }
 
 /****************** CLASSES EXTRAS *******************/
