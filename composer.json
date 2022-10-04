@@ -1,0 +1,46 @@
+{
+	"name": "part/cms-cakephp",
+	"description": "Projeto CMS CakePHP, criado por Part Comunicação",
+	"keywords": ["part","cms","cakephp"],
+	"homepage": "http://part.com.br",
+	"authors": [
+		{
+			"name": "Matheus Frade",
+			"homepage": "https://github.com/matheusfrade/"
+		},
+		{
+			"name": "Ricardo Vigatti",
+			"homepage": "https://github.com/ricardovigatti/"
+		},
+		{
+			"name": "Thiago Carneiro",
+			"homepage": "https://github.com/thiagopart/"
+		}
+	],
+	"support": {
+		"issues": "https://github.com/ricardovigatti/cms-part-cakephp/issues",
+		"source": "https://github.com/cakephp/cakephp/tree/2.x"
+	},
+	"require": {
+		"php": ">=5.3.0",
+		"ext-mcrypt": "*",
+		"phpmd/phpmd": "^2.6"
+	},
+	"require-dev": {
+		"phpunit/phpunit": "<6.0.0",
+		"cakephp/cakephp-codesniffer": "^1.0.0",
+		"phing/phing": "2.*",
+		"sebastian/phpcpd": "^3.0",
+		"pdepend/pdepend": "^2.5"
+	},
+	"config": {
+		"vendor-dir": "vendors/",
+		"process-timeout": 0
+	},
+	"bin": [
+		"lib/Cake/Console/cake"
+	],
+	"scripts": {
+		"build": "vendors\\bin\\phing"
+	}
+}

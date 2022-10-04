@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project name="part-cms-cakephp" description="CMS default project by Part using CakePHP" default="build" basedir=".">
+
+    <property name="build.dir" value="build" />
+    <property name="reports.dir" value="${build.dir}/reports" />
+
+    <fileset id="site" dir=".">
+        <include name="**" />
+        <exclude name=".idea/**" />
+        <exclude name="app/Config/*.default" />
+        <exclude name="build/**" />
+        <exclude name="vendors/**" />
+        <exclude name=".editorconfig" />
+        <exclude name=".gitattributes" />
+        <exclude name=".gitignore" />
+        <exclude name="README.md" />
+    </fileset>
+
+    <fileset id="reports" dir="./app" >
+        <include name="**/*.php" />
+        <exclude name="Config/**" />
+        <exclude name="Plugin/**" />
+        <include name="Plugin/Part/*.php" />
+        <include name="Plugin/PartUpload/*.php" />
+        <exclude name="Vendor/**" />
+        <exclude name="webroot/**" />
+    </fileset>
+
+    <target name="clean">
+        <delete dir="${build.dir}" includeemptydirs="true" />
+    </target>
+
+    <target name="prepare">
+        <mkdir dir="${build.dir}" />
+        <mkdir dir="${reports.dir}" />
+        <mkdir dir="${reports.dir}/pdepend" />
+        <mkdir dir="${reports.dir}/phpcs" />
+    </target>
+
+    <target name="build" depends="clean, prepare">
+        <echo msg="cleaning tmp dir..."/>
+        <delete includeemptydirs="true">
+            <fileset dir=".">
+                <include name="app/tmp/cache/models/*" />
+                <include name="app/tmp/cache/persistent/*" />
+                <include name="app/tmp/cache/views/*" />
+                <include name="app/tmp/logs/*" />
+                <include name="app/tmp/sessions/*" />
+                <include name="app/tmp/tests/*" />
+            </fileset>
+        </delete>
+
+        <echo msg="cleaning files upload dir..."/>
+        <delete includeemptydirs="true">
+            <fileset dir=".">
+                <include name="app/webroot/files/tmp/*" />
+            </fileset>
+        </delete>
+
+        <echo msg="Compressing files using zip..."/>
+        <zip includeemptydirs="true" destfile="${build.dir}/${phing.project.name}.zip">
+            <fileset refid="site" />
+        </zip>
+    </target>
+
+    <target name="phpcs" description="it runs PHP CodeSniffer excluding 3rd-party files">
+        <!--Summary-->
+        <phpcodesniffer standard="CakePHP">
+            <config name="installed_paths" value="vendors/cakephp/cakephp-codesniffer"/>
+            <formatter type="summary" outfile="${reports.dir}/phpcs/phpcs.txt" />
+            <fileset refid="reports"/>
+        </phpcodesniffer>
+
+        <!--Checkstyle-->
+        <phpcodesniffer standard="CakePHP">
+            <config name="installed_paths" value="vendors/cakephp/cakephp-codesniffer"/>
+            <formatter type="checkstyle" outfile="${reports.dir}/phpcs/phpcs.xml" />
+            <fileset refid="reports"/>
+        </phpcodesniffer>
+    </target>
+
+    <target name="phpcpd" description="it runs PHP Copy/Paste Detector excluding 3rd-party files">
+        <phpcpd>
+            <fileset refid="reports" />
+            <formatter type="pmd" outfile="${reports.dir}/pmd-cpd.xml"/>
+        </phpcpd>
+    </target>
+
+    <target name="pdepend" description="it runs PDepend excluding 3rd-party files" depends="prepare">
+        <phpdepend>
+            <fileset refid="reports" />
+            <logger type="jdepend-xml" outfile="${reports.dir}/pdepend/jdepend.xml"/>
+            <logger type="jdepend-chart" outfile="${reports.dir}/pdepend/dependencies.svg"/>
+            <logger type="overview-pyramid" outfile="${reports.dir}/pdepend/overview-pyramid.svg"/>
+        </phpdepend>
+    </target>
+
+    <target name="phpmd" description="it runs PHPMD excluding 3rd-party files">
+        <phpmd rulesets="codesize,unusedcode,design">
+            <fileset refid="reports" />
+            <formatter type="xml" outfile="${reports.dir}/pmd.html"/>
+        </phpmd>
+    </target>
+
+    <target name="reports" depends="prepare">
+        <phingcall target="phpcs"/>
+        <phingcall target="phpcpd"/>
+        <phingcall target="pdepend"/>
+        <phingcall target="phpmd"/>
+    </target>
+</project>
