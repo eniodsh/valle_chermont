@@ -45,6 +45,7 @@
 	        			</li>	
 						<li><?php echo $this->Html->link('Quem somos', '/pages/quem-somos', array('class' => $this->request->params['action'] == 'index' && $this->request->params['controller'] == 'quem-somos' ? 'quem-somos' : '')); ?></li>
 						<li><?php echo $this->Html->link('O cartório', '/pages/cartorio', array('class' => $this->request->params['action'] == 'index' && $this->request->params['controller'] == 'cartorio' ? 'cartorio' : '')); ?></li>
+						<li><?php echo $this->Html->link('Nossa Cidade', '/pages/nossa-cidade', array('class' => $this->request->params['action'] == 'index' && $this->request->params['controller'] == 'nossa-cidade' ? 'nossa-cidade' : '')); ?></li>
 						<li><?php echo $this->Html->link('LGPD', '/pages/lgpd', array('class' => $this->request->params['action'] == 'index' && $this->request->params['controller'] == 'lgpd' ? 'lgpd' : '')); ?></li>
 						<li><?php echo $this->Html->link('Transparência', '/pages/transparencia', array('class' => $this->request->params['action'] == 'index' && $this->request->params['controller'] == 'transparencia' ? 'transparencia' : '')); ?></li>
 			        </ul>

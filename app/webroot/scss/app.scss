@@ -662,6 +662,12 @@ footer{
   float: left;
   width: 100%;
 
+  .side_link{
+    padding-top: 20px;
+    padding-bottom: 30px;
+    background: #E8E8E8;
+  }
+
   .central{max-width: 1150px;}
 
   .conteudo_text{
@@ -730,6 +736,17 @@ footer{
 
 .box_links{
   a:hover{color: $secondary-color;}
+}
+
+.clearing-thumbs{
+  li{
+    height: 200px;
+    overflow: hidden;
+    a{
+      float: left;
+      img{width: 400px;}
+    }
+  }
 }
 
 /****************** PAGE NOTICIAS *******************/
