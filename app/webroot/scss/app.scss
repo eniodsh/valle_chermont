@@ -766,6 +766,18 @@ footer{
   }
 }
 
+.clearing-thumb.cartorio_box{
+  a{
+    float: left;
+    height: 200px;
+    overflow: hidden;
+   margin-bottom: 20px;
+   
+    img{width: 400px;}
+
+  }
+}
+
 /****************** PAGE NOTICIAS *******************/
 
 #box_noticias{
