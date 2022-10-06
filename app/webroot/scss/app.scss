@@ -81,7 +81,7 @@ body {
   a{transition: 0.5s ease 0s;font-weight: 500;}
   a:hover{color: $primary-color;}
 
-  hr{margin:10px 0;}
+  hr{margin: 30px 0;float: left;width: 100%;}
   address{font-style: normal;}
   button:focus, .button:focus{background-color: inherit!important;}
 
@@ -651,18 +651,261 @@ footer{
 
 }
 
+/****************** INSTITUCIONAL *******************/
+
+#banner_interno{
+  float: left;
+
+}
+
+#box_institucional{
+  float: left;
+  width: 100%;
+
+  .central{max-width: 1150px;}
+
+  .conteudo_text{
+    padding: 40px 0;
+
+    p{line-height: 23px;font-size: 17px;font-weight: 500;}
+
+    h2{
+      color: $primary-color;
+      font-size: 36px;
+      margin-bottom: 30px;
+      text-align: center;
+      span{
+        margin: 0 auto;
+        display: table;
+        width: 80px;
+        border-bottom: 4px solid $primary-color;
+      }
+    }
+    h3{color: $primary-color;margin-bottom: 20px;font-weight: 600;}
+    .col_3,.col_9{margin-bottom: 20px;}
+
+    h4{
+      margin-top: 0;
+      span{font-size: 18px;}
+    }
+
+    table td{font-weight: 500;}
+  }
+
+  #servicos{
+    background: $white;
+    padding: 0!important;
+
+    p a{
+      font-weight: 600;
+
+      &:hover{color: $secondary-color;}
+    }
+
+    ul{
+      li{
+        font-size: 16px;
+        line-height: 22px;
+
+        a{
+          float: left;
+          width: 100%;
+          text-align: center;
+          color:$primary-color;
+          font-weight: 500;
+          i{
+            display: block;
+            width: 130px;
+            height: 130px;
+            margin: 20px auto;
+            border-radius: 100%;
+            border: solid 2px $primary-color;
+            background-size: 85px!important;
+          }
+        }
+      }   
+    }
+  }
+}
+
+
+/****************** PAGE NOTICIAS *******************/
+
+#box_noticias{
+  @include grid-column(12);
+  padding: 0;
+
+  .lista_noticias{
+    float: left;
+    width: 100%;
+    border-bottom: 5px solid $primary-color;
+    padding: 30px 0;
+
+    .img_box{
+      @include grid-column(4);
+      a{float: left;width: 100%;}
+    }
+
+    .text_box{
+      @include grid-column(8);
+      h3{color: $primary-color;}
+      p{font-size: 15px;line-height: 23px;}
+      span{font-size: 18px;margin-bottom: 15px;display: block;}
+    }
+  }
+
+  .int_noticias{
+    float: left;
+    width: 100%;
+    padding: 0 0 30px;
+    .img_box{
+      @include grid-column(12);
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+    .text_box{
+      @include grid-column(12);
+      h3{color: $primary-color;font-size: 31px;margin-bottom: 0;}
+      p{font-size: 15px;line-height: 23px;float: left;width: 100%;}
+      span{font-size: 18px;margin-bottom: 15px;display: block;}
+    }
+  }
+  
+}
+
+/************ PAGINA CONTATO ***********/
+
+#contato{
+  float: left;
+  width: 100%;
+  padding: 20px 0;
+
+  .title_box{
+    float: left;
+    width: 100%;
+    margin: 10px 0;
+    background: #cbcbcb;
+    h2{
+      color: $primary-color;
+      margin: 0 auto;
+      font-weight: 800;
+      padding: 30px 25px;
+      img{max-width: 65px;margin: 0 10px;}
+    }
+  }
+
+  .box_contato{
+    width: 80%;
+    margin: 0 auto;
+    display: table;
+
+    p{
+      font-size: 20px;
+      text-align: center;
+      line-height: 31px;
+      margin: 20px 0;
+    }
+
+    form{
+      background: #dfdfdf;
+      padding: 40px 20px 10px;
+      border-radius: 10px;
+      float: left;
+      width: 100%;
+    }
+    input[type=text]{
+      padding: 5px 10px;
+      color: $primary-color;
+      background: none;
+      height: 47px;
+      border-radius: 8px;
+      background: #FFF;
+      font-size: 19px;
+
+      @media only screen and (max-width: 800px) {
+        height: 40px;
+        font-size: 16px;
+      }
+    }
+    input[type=submit]{
+      display: table;
+      width: 100%;
+      max-width: 250px;
+      margin: 0 auto;
+      height: 47px;
+      text-align: center;
+      color: $white;
+      background:$primary-color;
+      border: none;
+      border-radius: 17px;
+      font-size: 20px;
+
+      &:hover{border-color: $secondary-color;background: $secondary-color;}
+
+      @media only screen and (max-width: 800px) {
+        max-width: 100%;
+        font-size: 16px;
+      }
+    }
+  }
+}
+
+/****************** CLASSES EXTRAS *******************/
+
+#banner{
+  .orbit-bullets-container{display: none!important;}
+
+  .orbit-container .orbit-prev, .orbit-container .orbit-next{top: 50%;}
+
+  .orbit-container .orbit-prev > span, .orbit-container .orbit-next > span{
+    border-width: 30px;
+  }
+  .orbit-container .orbit-next,.orbit-container .orbit-prev{background: none;}
+  .orbit-container .orbit-next {
+    right: 40px;
+  }
+
+  span.nome_foto{
+    position: absolute;
+    bottom: 90px;
+    right: -60px;
+    color: #FFF;
+    font-weight: 500;
+    font-size: 14px;
+    transform: rotate(-90deg);
+    text-shadow: 1px 1px 1px #000;
+  }
+}
+
+.btn_ver{
+  float: right;
+  color: $white;
+  padding: 5px 30px;
+  font-size: 16px;
+  border-radius: 8px;
+  text-transform: uppercase;
+  border: solid 2px $primary-color;
+  background: $primary-color;
+
+  &:hover{border-color: $primary-color;background: $white;}
+}
+
 .btn_veja{
   font-size: 25px;
   font-weight: 700;
   text-decoration: underline;
   margin: 30px auto 0;
   display: table;
-
+  color: $white;
   &:hover{color: $secondary-color;}
 }
 
-/****************** CLASSES EXTRAS *******************/
-
+.linha_paginacao{
+  margin: 0 auto;
+  display: table;
+  padding: 20px 0;
+}
 
 
 .align_left{text-align: left!important;}

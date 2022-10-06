@@ -43,18 +43,18 @@
 	        			<li class="title back js-generated">
         					<h5><a href="javascript:void(0)"><i class="fa-solid fa-chevrons-left"></i> VOLTAR</a></h5>
 	        			</li>	
-						<li><a href="#">Quem somos</a></li>
-						<li><a href="#">O cartório</a></li>
-						<li><a href="#">LGPD</a></li>
-						<li><a href="#">Transparência</a></li>
-						<li><a href="#">Política de Privacidade</a></li>
+						<li><?php echo $this->Html->link('Quem somos', '/pages/quem-somos', array('class' => $this->request->params['action'] == 'index' && $this->request->params['controller'] == 'quem-somos' ? 'quem-somos' : '')); ?></li>
+						<li><?php echo $this->Html->link('O cartório', '/pages/cartorio', array('class' => $this->request->params['action'] == 'index' && $this->request->params['controller'] == 'cartorio' ? 'cartorio' : '')); ?></li>
+						<li><?php echo $this->Html->link('LGPD', '/pages/lgpd', array('class' => $this->request->params['action'] == 'index' && $this->request->params['controller'] == 'lgpd' ? 'lgpd' : '')); ?></li>
+						<li><?php echo $this->Html->link('Transparência', '/pages/transparencia', array('class' => $this->request->params['action'] == 'index' && $this->request->params['controller'] == 'transparencia' ? 'transparencia' : '')); ?></li>
+						<li><?php echo $this->Html->link('Política de Privacidade', '/pages/politica', array('class' => $this->request->params['action'] == 'index' && $this->request->params['controller'] == 'politica' ? 'politica' : '')); ?></li>
 			        </ul>
 			      </li>
-			      <li><a href="#" title="Serviços">Serviços</a></li>
-			      <li><a href="#" title="Notícias">Notícias</a></li>
-  			      <li><a href="#" title="Tabelha de Emolumentos">Tabelha de Emolumentos</a></li>
-			      <li><a href="#" title="Links úteis">Links úteis</a></li>
-			      <li><a href="#" title="Contatos">Contatos</a></li>
+			      <li><?php echo $this->Html->link('Serviços', '/pages/servicos', array('class' => $this->request->params['action'] == 'index' && $this->request->params['controller'] == 'servicos' ? 'servicos' : '')); ?></li>
+			      <li><?php echo $this->Html->link('Notícias', '/pages/noticias', array('class' => $this->request->params['action'] == 'index' && $this->request->params['controller'] == 'noticias' ? 'noticias' : '')); ?></li>
+			      <li><?php echo $this->Html->link('Tabelha de Emolumentos', '/pages/emolumentos', array('class' => $this->request->params['action'] == 'index' && $this->request->params['controller'] == 'emolumentos' ? 'emolumentos' : '')); ?></li>
+  			      <li><?php echo $this->Html->link('Links úteis', '/pages/links-uteis', array('class' => $this->request->params['action'] == 'index' && $this->request->params['controller'] == 'links-uteis' ? 'links-uteis' : '')); ?></li>
+			      <li><?php echo $this->Html->link('Contato', '/pages/contato', array('class' => $this->request->params['action'] == 'index' && $this->request->params['controller'] == 'contato' ? 'contato' : '')); ?></li>
 			    </ul>
 			  </div>
 			</section>

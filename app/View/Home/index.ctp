@@ -1,6 +1,27 @@
 <section id="banner">
-  <?php echo $this->Html->image('img_banner.jpg', array('alt' => __(""))) ?>
+  <ul class="example-orbit" data-orbit>
+    <li>
+      <?php echo $this->Html->image('img_banner.jpg', array('alt' => __(""))) ?>
+      <span class="nome_foto">FOTOS PEDRO NUNES</span>
+    </li>
+    <li>
+      <?php echo $this->Html->image('img_banner2.jpg', array('alt' => __(""))) ?>
+      <span class="nome_foto">FOTOS PEDRO NUNES</span>
+    </li>
+  </ul>
 </section>
+
+<!--
+<section id="banner">
+  <ul class="example-orbit" data-orbit>
+    < ?php foreach($banners as $banner){?>
+    <li>
+      < ?php echo $this->Html->image('/files/banner/large_' . $banner['Banner']['imagem'], array('alt' => __(""))) ?>
+      <span class="nome_foto">FOTOS PEDRO NUNES</span>
+    </li>
+    < ?php } ?>
+  </ul>
+</section> -->
 
 <section id="servicos">
   <div class="central">
