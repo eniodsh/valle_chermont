@@ -747,6 +747,21 @@ footer{
       overflow: hidden;
      
       img{width: 400px;}
+
+      @media only screen and (max-width: 1000px) {
+        height: 90px;
+      }
+
+    }
+    @media only screen and (max-width: 640px) {
+      width: 50%!important;
+      padding-bottom: 15px;
+
+      a{height: 100px;}
+    }
+    @media only screen and (max-width: 640px) {
+
+      a{height: 85px;}
     }
   }
 }
