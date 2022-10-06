@@ -52,7 +52,7 @@
 			      </li>
 			      <li><?php echo $this->Html->link('Serviços', '/pages/servicos', array('class' => $this->request->params['action'] == 'index' && $this->request->params['controller'] == 'servicos' ? 'servicos' : '')); ?></li>
 			      <li><?php echo $this->Html->link('Notícias', '/pages/noticias', array('class' => $this->request->params['action'] == 'index' && $this->request->params['controller'] == 'noticias' ? 'noticias' : '')); ?></li>
-			      <li><?php echo $this->Html->link('Tabelha de Emolumentos', '/pages/emolumentos', array('class' => $this->request->params['action'] == 'index' && $this->request->params['controller'] == 'emolumentos' ? 'emolumentos' : '')); ?></li>
+			      <li><?php echo $this->Html->link('Tabelha de Emolumentos', 'https://irtdpjbrasil.org.br/files/emolumento/PR-Tabela-Atualizada-Extrajudicial.pdf', array('target' =>"_blank",'class' => $this->request->params['action'] == 'index' && $this->request->params['controller'] == 'emolumentos' ? 'emolumentos' : '')); ?></li>
   			      <li><?php echo $this->Html->link('Links úteis', '/pages/links-uteis', array('class' => $this->request->params['action'] == 'index' && $this->request->params['controller'] == 'links-uteis' ? 'links-uteis' : '')); ?></li>
 			      <li><?php echo $this->Html->link('Contato', '/pages/contato', array('class' => $this->request->params['action'] == 'index' && $this->request->params['controller'] == 'contato' ? 'contato' : '')); ?></li>
 			    </ul>

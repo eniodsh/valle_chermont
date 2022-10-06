@@ -128,7 +128,13 @@
             </tr>
           </tbody>
         </table>
+        <br clear="all">
         
+        <h4><strong>Registro Civil de Pessoas Jurídicas</strong></h4>
+        <p>
+          As atividades do RCPJ também estão disciplinadas pela Lei de Registros Públicos, especialmente no Art. 114 com as alterações introduzidas pela Lei n.10.406/02 (Código Civil Brasileiro).
+        </p>
+        <br clear="all">
       </section>
     </div> 
   </div>
