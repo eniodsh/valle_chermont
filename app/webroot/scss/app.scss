@@ -766,15 +766,16 @@ footer{
   }
 }
 
-.clearing-thumb.cartorio_box{
-  a{
-    float: left;
-    height: 200px;
-    overflow: hidden;
-   margin-bottom: 20px;
-   
-    img{width: 400px;}
+.cartorio_box{
+  .clearing-thumb{
+    li{
+      a{
+        
+        height: 200px!important;
+        margin-bottom: 20px;
 
+      }
+    }
   }
 }
 

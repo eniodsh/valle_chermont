@@ -16,17 +16,19 @@
           A primeira titular foi a senhora Helena do Valle e Silva Chermont, que nomeada pelo governador do Estado do Pará, nos termos do parágrafo único do art.119 da Lei n. 1.844 de 30 de dezembro de 1959 (Código Judiciário) para o cargo de oficial do 2º Ofício do Registro de Títulos e Documentos da Comarca da Capital, criada pelo art.232 da lei supracitada.
         </p>
       </div>
-      <div class="col_4">
+      <div class="col_4 cartorio_box">
         
-        <ul class="clearing-thumbs cartorio_box" data-clearing>
-          <li>
+        <ul class="clearing-thumbs" data-clearing>
+          <li style="margin-bottom: 10px;">
             <?php echo $this->Html->image('cartorio_1.jpg', array('url' =>"/img/cartorio_1.jpg",'alt' => __(""))) ?> 
+
           </li>
           <li>
             <?php echo $this->Html->image('cartorio_2.jpg', array('url' =>"/img/cartorio_2.jpg",'alt' => __(""))) ?> 
           </li>
         </ul>
       </div>
+
       <hr>
       <br clear="all">
 
