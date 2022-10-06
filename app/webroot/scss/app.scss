@@ -740,10 +740,12 @@ footer{
 
 .clearing-thumbs{
   li{
-    height: 200px;
-    overflow: hidden;
+    
     a{
       float: left;
+      height: 160px;
+      overflow: hidden;
+     
       img{width: 400px;}
     }
   }

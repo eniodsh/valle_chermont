@@ -10806,22 +10806,19 @@ footer .rcol .box_redes li a:hover {
   color: #9dddb8;
 }
 
-/* line 742, ../scss/app.scss */
-.clearing-thumbs li {
-  height: 200px;
-  overflow: hidden;
-}
-/* line 745, ../scss/app.scss */
+/* line 744, ../scss/app.scss */
 .clearing-thumbs li a {
   float: left;
+  height: 160px;
+  overflow: hidden;
 }
-/* line 747, ../scss/app.scss */
+/* line 749, ../scss/app.scss */
 .clearing-thumbs li a img {
   width: 400px;
 }
 
 /****************** PAGE NOTICIAS *******************/
-/* line 754, ../scss/app.scss */
+/* line 756, ../scss/app.scss */
 #box_noticias {
   padding-left: 0.9375rem;
   padding-right: 0.9375rem;
@@ -10829,54 +10826,54 @@ footer .rcol .box_redes li a:hover {
   float: left;
   padding: 0;
 }
-/* line 758, ../scss/app.scss */
+/* line 760, ../scss/app.scss */
 #box_noticias .lista_noticias {
   float: left;
   width: 100%;
   border-bottom: 5px solid #308152;
   padding: 30px 0;
 }
-/* line 764, ../scss/app.scss */
+/* line 766, ../scss/app.scss */
 #box_noticias .lista_noticias .img_box {
   padding-left: 0.9375rem;
   padding-right: 0.9375rem;
   width: 33.33333%;
   float: left;
 }
-/* line 766, ../scss/app.scss */
+/* line 768, ../scss/app.scss */
 #box_noticias .lista_noticias .img_box a {
   float: left;
   width: 100%;
 }
-/* line 769, ../scss/app.scss */
+/* line 771, ../scss/app.scss */
 #box_noticias .lista_noticias .text_box {
   padding-left: 0.9375rem;
   padding-right: 0.9375rem;
   width: 66.66667%;
   float: left;
 }
-/* line 771, ../scss/app.scss */
+/* line 773, ../scss/app.scss */
 #box_noticias .lista_noticias .text_box h3 {
   color: #308152;
 }
-/* line 772, ../scss/app.scss */
+/* line 774, ../scss/app.scss */
 #box_noticias .lista_noticias .text_box p {
   font-size: 15px;
   line-height: 23px;
 }
-/* line 773, ../scss/app.scss */
+/* line 775, ../scss/app.scss */
 #box_noticias .lista_noticias .text_box span {
   font-size: 18px;
   margin-bottom: 15px;
   display: block;
 }
-/* line 777, ../scss/app.scss */
+/* line 779, ../scss/app.scss */
 #box_noticias .int_noticias {
   float: left;
   width: 100%;
   padding: 0 0 30px;
 }
-/* line 781, ../scss/app.scss */
+/* line 783, ../scss/app.scss */
 #box_noticias .int_noticias .img_box {
   padding-left: 0.9375rem;
   padding-right: 0.9375rem;
@@ -10885,27 +10882,27 @@ footer .rcol .box_redes li a:hover {
   text-align: center;
   margin-bottom: 20px;
 }
-/* line 787, ../scss/app.scss */
+/* line 789, ../scss/app.scss */
 #box_noticias .int_noticias .text_box {
   padding-left: 0.9375rem;
   padding-right: 0.9375rem;
   width: 100%;
   float: left;
 }
-/* line 789, ../scss/app.scss */
+/* line 791, ../scss/app.scss */
 #box_noticias .int_noticias .text_box h3 {
   color: #308152;
   font-size: 31px;
   margin-bottom: 0;
 }
-/* line 790, ../scss/app.scss */
+/* line 792, ../scss/app.scss */
 #box_noticias .int_noticias .text_box p {
   font-size: 15px;
   line-height: 23px;
   float: left;
   width: 100%;
 }
-/* line 791, ../scss/app.scss */
+/* line 793, ../scss/app.scss */
 #box_noticias .int_noticias .text_box span {
   font-size: 18px;
   margin-bottom: 15px;
@@ -10913,45 +10910,45 @@ footer .rcol .box_redes li a:hover {
 }
 
 /************ PAGINA CONTATO ***********/
-/* line 799, ../scss/app.scss */
+/* line 801, ../scss/app.scss */
 #contato {
   float: left;
   width: 100%;
   padding: 20px 0;
 }
-/* line 804, ../scss/app.scss */
+/* line 806, ../scss/app.scss */
 #contato .title_box {
   float: left;
   width: 100%;
   margin: 10px 0;
   background: #cbcbcb;
 }
-/* line 809, ../scss/app.scss */
+/* line 811, ../scss/app.scss */
 #contato .title_box h2 {
   color: #308152;
   margin: 0 auto;
   font-weight: 800;
   padding: 30px 25px;
 }
-/* line 814, ../scss/app.scss */
+/* line 816, ../scss/app.scss */
 #contato .title_box h2 img {
   max-width: 65px;
   margin: 0 10px;
 }
-/* line 818, ../scss/app.scss */
+/* line 820, ../scss/app.scss */
 #contato .box_contato {
   width: 100%;
   margin: 0 auto;
   display: table;
 }
-/* line 823, ../scss/app.scss */
+/* line 825, ../scss/app.scss */
 #contato .box_contato p {
   font-size: 20px;
   text-align: center;
   line-height: 31px;
   margin: 20px 0;
 }
-/* line 830, ../scss/app.scss */
+/* line 832, ../scss/app.scss */
 #contato .box_contato form {
   background: #dfdfdf;
   padding: 40px 20px 10px;
@@ -10959,7 +10956,7 @@ footer .rcol .box_redes li a:hover {
   float: left;
   width: 100%;
 }
-/* line 837, ../scss/app.scss */
+/* line 839, ../scss/app.scss */
 #contato .box_contato input[type=text] {
   padding: 5px 10px;
   color: #308152;
@@ -10970,13 +10967,13 @@ footer .rcol .box_redes li a:hover {
   font-size: 19px;
 }
 @media only screen and (max-width: 800px) {
-  /* line 837, ../scss/app.scss */
+  /* line 839, ../scss/app.scss */
   #contato .box_contato input[type=text] {
     height: 40px;
     font-size: 16px;
   }
 }
-/* line 851, ../scss/app.scss */
+/* line 853, ../scss/app.scss */
 #contato .box_contato input[type=submit] {
   display: table;
   width: 100%;
@@ -10990,13 +10987,13 @@ footer .rcol .box_redes li a:hover {
   border-radius: 17px;
   font-size: 20px;
 }
-/* line 864, ../scss/app.scss */
+/* line 866, ../scss/app.scss */
 #contato .box_contato input[type=submit]:hover {
   border-color: #9dddb8;
   background: #9dddb8;
 }
 @media only screen and (max-width: 800px) {
-  /* line 851, ../scss/app.scss */
+  /* line 853, ../scss/app.scss */
   #contato .box_contato input[type=submit] {
     max-width: 100%;
     font-size: 16px;
@@ -11004,27 +11001,27 @@ footer .rcol .box_redes li a:hover {
 }
 
 /****************** CLASSES EXTRAS *******************/
-/* line 877, ../scss/app.scss */
+/* line 879, ../scss/app.scss */
 #banner .orbit-bullets-container {
   display: none !important;
 }
-/* line 879, ../scss/app.scss */
+/* line 881, ../scss/app.scss */
 #banner .orbit-container .orbit-prev, #banner .orbit-container .orbit-next {
   top: 50%;
 }
-/* line 881, ../scss/app.scss */
+/* line 883, ../scss/app.scss */
 #banner .orbit-container .orbit-prev > span, #banner .orbit-container .orbit-next > span {
   border-width: 30px;
 }
-/* line 884, ../scss/app.scss */
+/* line 886, ../scss/app.scss */
 #banner .orbit-container .orbit-next, #banner .orbit-container .orbit-prev {
   background: none;
 }
-/* line 885, ../scss/app.scss */
+/* line 887, ../scss/app.scss */
 #banner .orbit-container .orbit-next {
   right: 40px;
 }
-/* line 889, ../scss/app.scss */
+/* line 891, ../scss/app.scss */
 #banner span.nome_foto {
   position: absolute;
   bottom: 90px;
@@ -11036,7 +11033,7 @@ footer .rcol .box_redes li a:hover {
   text-shadow: 1px 1px 1px #000;
 }
 
-/* line 901, ../scss/app.scss */
+/* line 903, ../scss/app.scss */
 .btn_ver {
   float: right;
   color: #FFFFFF;
@@ -11047,13 +11044,13 @@ footer .rcol .box_redes li a:hover {
   border: solid 2px #308152;
   background: #308152;
 }
-/* line 911, ../scss/app.scss */
+/* line 913, ../scss/app.scss */
 .btn_ver:hover {
   border-color: #308152;
   background: #FFFFFF;
 }
 
-/* line 914, ../scss/app.scss */
+/* line 916, ../scss/app.scss */
 .btn_veja {
   font-size: 25px;
   font-weight: 700;
@@ -11062,24 +11059,24 @@ footer .rcol .box_redes li a:hover {
   display: table;
   color: #FFFFFF;
 }
-/* line 921, ../scss/app.scss */
+/* line 923, ../scss/app.scss */
 .btn_veja:hover {
   color: #9dddb8;
 }
 
-/* line 924, ../scss/app.scss */
+/* line 926, ../scss/app.scss */
 .linha_paginacao {
   margin: 0 auto;
   display: table;
   padding: 20px 0;
 }
 
-/* line 931, ../scss/app.scss */
+/* line 933, ../scss/app.scss */
 .align_left {
   text-align: left !important;
 }
 
-/* line 933, ../scss/app.scss */
+/* line 935, ../scss/app.scss */
 .col_2 {
   padding-left: 0.9375rem;
   padding-right: 0.9375rem;
@@ -11087,7 +11084,7 @@ footer .rcol .box_redes li a:hover {
   float: left;
 }
 
-/* line 934, ../scss/app.scss */
+/* line 936, ../scss/app.scss */
 .col_3 {
   padding-left: 0.9375rem;
   padding-right: 0.9375rem;
@@ -11095,7 +11092,7 @@ footer .rcol .box_redes li a:hover {
   float: left;
 }
 
-/* line 935, ../scss/app.scss */
+/* line 937, ../scss/app.scss */
 .col_4 {
   padding-left: 0.9375rem;
   padding-right: 0.9375rem;
@@ -11103,7 +11100,7 @@ footer .rcol .box_redes li a:hover {
   float: left;
 }
 
-/* line 936, ../scss/app.scss */
+/* line 938, ../scss/app.scss */
 .col_5 {
   padding-left: 0.9375rem;
   padding-right: 0.9375rem;
@@ -11111,7 +11108,7 @@ footer .rcol .box_redes li a:hover {
   float: left;
 }
 
-/* line 937, ../scss/app.scss */
+/* line 939, ../scss/app.scss */
 .col_6 {
   padding-left: 0.9375rem;
   padding-right: 0.9375rem;
@@ -11119,7 +11116,7 @@ footer .rcol .box_redes li a:hover {
   float: left;
 }
 
-/* line 938, ../scss/app.scss */
+/* line 940, ../scss/app.scss */
 .col_8 {
   padding-left: 0.9375rem;
   padding-right: 0.9375rem;
@@ -11127,7 +11124,7 @@ footer .rcol .box_redes li a:hover {
   float: left;
 }
 
-/* line 939, ../scss/app.scss */
+/* line 941, ../scss/app.scss */
 .col_9 {
   padding-left: 0.9375rem;
   padding-right: 0.9375rem;
@@ -11135,7 +11132,7 @@ footer .rcol .box_redes li a:hover {
   float: left;
 }
 
-/* line 940, ../scss/app.scss */
+/* line 942, ../scss/app.scss */
 .col_12 {
   padding-left: 0.9375rem;
   padding-right: 0.9375rem;
@@ -11144,7 +11141,7 @@ footer .rcol .box_redes li a:hover {
 }
 
 @media only screen and (max-width: 960px) {
-  /* line 943, ../scss/app.scss */
+  /* line 945, ../scss/app.scss */
   .col_4, .col_6, .col_8 {
     padding-left: 0.9375rem;
     padding-right: 0.9375rem;
@@ -11152,34 +11149,34 @@ footer .rcol .box_redes li a:hover {
     float: left;
   }
 }
-/* line 946, ../scss/app.scss */
+/* line 948, ../scss/app.scss */
 .orbit-slide-number, .orbit-timer {
   display: none;
 }
 
-/* line 947, ../scss/app.scss */
+/* line 949, ../scss/app.scss */
 .orbit-container .orbit-prev, .orbit-container .orbit-next {
   top: 60px;
 }
 @media only screen and (max-width: 56.25em) {
-  /* line 947, ../scss/app.scss */
+  /* line 949, ../scss/app.scss */
   .orbit-container .orbit-prev, .orbit-container .orbit-next {
     top: 200px;
     display: block;
   }
 }
 
-/* line 955, ../scss/app.scss */
+/* line 957, ../scss/app.scss */
 .orbit-container .orbit-prev:hover span {
   border-right-color: #308152;
 }
 
-/* line 956, ../scss/app.scss */
+/* line 958, ../scss/app.scss */
 .orbit-container .orbit-next:hover span {
   border-left-color: #308152;
 }
 
-/* line 958, ../scss/app.scss */
+/* line 960, ../scss/app.scss */
 .title_page {
   font-size: 40px;
   margin: 10px auto 35px;
@@ -11192,14 +11189,14 @@ footer .rcol .box_redes li a:hover {
   text-transform: uppercase;
 }
 @media only screen and (max-width: 56.25em) {
-  /* line 958, ../scss/app.scss */
+  /* line 960, ../scss/app.scss */
   .title_page {
     font-size: 30px;
     line-height: 28px;
   }
 }
 
-/* line 975, ../scss/app.scss */
+/* line 977, ../scss/app.scss */
 .videoWrapper {
   position: relative;
   padding-bottom: 56.25%;
@@ -11208,7 +11205,7 @@ footer .rcol .box_redes li a:hover {
   height: 0;
 }
 
-/* line 981, ../scss/app.scss */
+/* line 983, ../scss/app.scss */
 .videoWrapper iframe {
   position: absolute;
   top: 0;
