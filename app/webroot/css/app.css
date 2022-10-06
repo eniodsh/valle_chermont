@@ -10920,7 +10920,7 @@ footer .rcol .box_redes li a:hover {
 }
 /* line 801, ../scss/app.scss */
 #contato .box_contato {
-  width: 80%;
+  width: 100%;
   margin: 0 auto;
   display: table;
 }
